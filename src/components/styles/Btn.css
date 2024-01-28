@@ -1,0 +1,34 @@
+.btn {
+    width: 150px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: ease-in-out 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.btn:hover {
+    filter: brightness(1.25);
+    transition: ease-in-out 0.3s;
+    cursor: pointer;
+    scale: 1.1;
+}
+
+.btn:active {
+    filter: brightness(0.85);
+    transition: 0s;
+}
+
+.btn--win {
+    background-color: rgb(28, 219, 60);
+}
+
+.btn--lose {
+    background-color: #b22c43;
+}

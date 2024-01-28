@@ -1,0 +1,131 @@
+body {
+    background-color: #141519;
+    font-family: sans-serif;
+    text-align: center;
+    cursor: default;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 50%;
+}
+
+.app__title {
+    color: #fb4451;
+    font-weight: bold;
+    font-size: 69px;
+    text-shadow: 0px 3px 21px rgba(251, 68, 81, 0.40);
+}
+
+.app__rank {
+    margin-top: 1.2rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 50px 0 30px 0;
+}
+
+.info__title {
+    color: rgb(196, 196, 196);
+    font-size: 2rem;
+    text-shadow: 0px 3px 21px rgba(255, 255, 255, 0.4);
+}
+
+.info__btn {
+    border: none;
+    border-radius: 1.2rem;
+    height: 2.3rem;
+    background: none;
+    border: solid 2px #b22c43;
+    transition: ease-in-out 0.15s;
+    color: #b22c43;
+
+    margin-top: -0.5rem;
+}
+
+.info__btn:hover {
+    cursor: pointer;
+    background: #b22c43;
+    color: white;
+}
+
+.info__btn:active {
+    background: #5e1722;
+    transition: 0s;
+}
+
+.history__matches {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 1536px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 640px;
+    }
+}
+
+@media (max-width: 640px) {
+    .container {
+        max-width: 475px;
+    }
+}
+
+@media (max-width: 475px) {
+    .container {
+        width: 100%;
+    }
+
+    .app__title {
+        font-size: 2.3rem;
+    }
+
+    .rank__img {
+        max-height: 25% !important;
+    }
+    
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn {
+        margin: 10px auto;
+        width: 250px !important;
+        height: 50px !important;
+    }
+
+    .match {
+        max-width: 95%;
+    }
+}
