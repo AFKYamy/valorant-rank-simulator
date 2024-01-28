@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/AFKYamy/valorant-rank-simulator/static/css/main.c9f6f428.css",
-    "main.js": "/AFKYamy/valorant-rank-simulator/static/js/main.f0dba979.js",
-    "index.html": "/AFKYamy/valorant-rank-simulator/index.html",
-    "main.c9f6f428.css.map": "/AFKYamy/valorant-rank-simulator/static/css/main.c9f6f428.css.map",
-    "main.f0dba979.js.map": "/AFKYamy/valorant-rank-simulator/static/js/main.f0dba979.js.map"
+    "main.css": "/valorant-rank-simulator/static/css/main.c9f6f428.css",
+    "main.js": "/valorant-rank-simulator/static/js/main.f0dba979.js",
+    "index.html": "/valorant-rank-simulator/index.html",
+    "main.c9f6f428.css.map": "/valorant-rank-simulator/static/css/main.c9f6f428.css.map",
+    "main.f0dba979.js.map": "/valorant-rank-simulator/static/js/main.f0dba979.js.map"
   },
   "entrypoints": [
     "static/css/main.c9f6f428.css",
