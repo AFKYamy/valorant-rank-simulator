@@ -8,12 +8,11 @@ import ranks from '../database/Ranks';
 let currRank = 1;
 
 const Rank = ({ matches, setMatches }) => {
-    const [rr, setRr] = useState(0); // with useState hook we can set values and render the changes
+    const [rr, setRr] = useState(0);
     const [imgSrc, setImgsrc] = useState('');
     const [rankName, setRank] = useState('');
     const [tierStyle, setTierstyle] = useState('');
 
-    // useEffect hook can perform side effects, it will run once when the component mounts
     useEffect(() => {
         const storedRr = localStorage.getItem('rr');
         const storedCurr = localStorage.getItem('currRank');
@@ -28,7 +27,7 @@ const Rank = ({ matches, setMatches }) => {
 
         
         update();
-      }, []); // empty dependency array ensures this will run once, if the dependencies change between renders the effect will re-run
+      }, []);
 
     const win = () => {
         let rand = Math.floor(Math.random() * (28 - 18 + 1)) + 18;
@@ -64,7 +63,6 @@ const Rank = ({ matches, setMatches }) => {
         });
     }
 
-    //update local storage whenever rr or currRank changes
     useEffect(() => {
         localStorage.setItem('rr', rr.toString());
         localStorage.setItem('currRank', currRank.toString());
